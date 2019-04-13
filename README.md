@@ -1,0 +1,2 @@
+# assets
+streaming assets
