@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    position: absolute;
+    border: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+
+.first {
+    z-index: -1;
+}
+
+.second {
+    z-index: -1;
+}
+
+.transition {
+    z-index: 0;
+}
+
+/* add keyframe animations for transitions */
+
+@keyframes tmp {
+    100% {
+        opacity: 0;
+    }
+}

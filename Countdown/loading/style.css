@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+body {
+    background: rgba(18,127,214,255);
+    width: 1920px;
+    height: 1080px;
+}
+
+div {
+  font-family: Merriweather;
+  font-weight: bold;
+}
+
+.wrapper {
+  background-image: url('imgs/tech-tree-parchment-drop-down-background.png');
+  position: absolute;
+  height: 200px;
+  width: 600px;
+  box-shadow: 0 40px 25px -20px rgba(0,0,0,0.7);
+  border-radius: 15px;
+  top: 50%;
+  left: 75%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+#logo {
+  position: absolute;
+  border-radius: 5px;
+  border-right: 5px solid #ccc;
+  border-top: 5px solid #ccc;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
+  height: 150px;
+  width: 150px;
+  left: 20px;
+  top: 20px;
+  background-color: #000;
+  transform: scaleX(-1);
+  background-image: url('imgs/villager_build.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title {
+  position: absolute;
+  font-size: 40px;
+  width: 305px;
+  left: 190px;
+  top: 20px;
+  height: auto;
+  word-wrap: break-word;
+  text-shadow: -2px 2px 10px #aaa;
+}
+
+#percent {
+  position: absolute;
+  font-size: 40px;
+  left: 490px;
+  top: 20px;
+  text-shadow: -2px 2px 10px #aaa;
+}
+
+#progress {
+  position: absolute;
+  width: 350px;
+  border-top: 4px solid #eee;
+  border-left: 4px solid #eee;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  border-radius: 5px;
+  height: 50px;
+  left: 190px;
+  top: 118px;
+  box-shadow: 2px 2px 10px #aaa;
+}
+
+#progress-fill {
+  position: absolute;
+  width: 0px;
+  height: 50px;
+  background-color: red;
+  background: linear-gradient(#F44336 60%, #B71C1C);
+}
+
+.logo-lg {
+  position: absolute;
+  height: 1576px;
+  width: 100%;
+  top: -20%;
+  background: url('imgs/big_logo_fixed.png') no-repeat;
+}

@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700|Righteous|Lato|Roboto|Oswald|Ubuntu");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+span {
+  font-family: Roboto;
+  font-size: 200px;
+  font-weight: bold;
+  text-shadow: 0px 5px 20px rgba(0,0,0,0.7);
+}

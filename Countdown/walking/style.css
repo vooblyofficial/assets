@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(18,127,214,255);
+}
+
+.game {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    border: 4px solid;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.layer3 {
+    z-index: -1;
+    position: absolute;
+    height: 300px;
+}
+
+#skyline {
+    z-index: 1;
+    position: absolute;
+    height: 225px;
+    width: 2400px;
+    top: 20px;
+    left: -70px;
+    background: url('imgs/skyline.png') repeat-x;
+    background-size: 1200px 225px;
+    animation: bgScroll 30s linear forwards infinite;
+}
+
+#ground {
+    z-index: 2;
+    position: absolute;
+    top: 200px;
+    height: 100px;
+    width: 1200px;
+    background: url("imgs/groundpattern.png") repeat-x;
+    animation: groundScroll 4s linear forwards infinite;
+}
+
+.layer1 {
+    z-index: 4;
+    position: absolute;
+    top: 130px;
+    height: 100%;
+    width: 2400px;
+    background: url("imgs/foreground.png") repeat-x;
+    animation: foregroundScroll 4s linear forwards infinite;
+}
+
+#walking {
+    z-index: 3;
+    position: absolute;
+    top: 130px;
+    left: 200px;
+    height: 100px;
+    width: auto;
+    transform: scaleX(-1);
+}
+
+#gold {
+    z-index: 3;
+    position: absolute;
+    top: 130px;
+    left: 420px;
+    height: auto;
+    width: auto;
+    filter: drop-shadow(0px 0px 20px #f4d742);
+    animation: bounce 1s alternate infinite;
+}
+
+iframe {
+    position: absolute;
+    border: 0;
+    padding: 0;
+    marginheight: 0;
+    marginwidth: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45%, -60%);
+  }
+
+@keyframes groundScroll {
+    100% {
+        transform: translateX(-600px);
+    }
+
+}
+
+@keyframes foregroundScroll {
+    100% {
+        transform: translateX(-1200px);
+    }
+}
+
+@keyframes bgScroll {
+    100% {
+        transform: translateX(-1200px);
+    }
+}
+
+@keyframes bounce {
+    100% {
+        transform: translateY(-20px);
+    }
+}

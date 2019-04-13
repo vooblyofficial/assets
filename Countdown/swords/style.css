@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  padding: 5px;
+  height: 1080px;
+  width: 2400px;
+  left: -480px;
+  background-color: rgba(18, 127, 214, 1);
+  animation: scrollRight 25s infinite;
+  animation-timing-function: linear;
+}
+
+.row {
+  display: flex;
+}
+
+.row:nth-child(even) {
+  transform: translate(80px);
+}
+
+.swords {
+  width: 200px;
+  height: 200px;
+}
+
+img {
+  position: absolute;
+  height: 60px;
+}
+
+.vooblyofficial {
+  position: absolute;
+  left: 660px;
+  top: 700px;
+  font-family: Ubuntu;
+  color: #fff;
+  font-size: 50px;
+}
+
+.soon {
+  color: #e1f902;
+}
+
+iframe {
+  border: 0;
+  margin-top: -50px;
+  padding: 0;
+  marginheight: 0;
+  marginwidth: 0;
+}
+
+.timer {
+  opacity: 0;
+  position: absolute;
+  font-family: Ubuntu;
+  left: 715px;
+  top: 300px;
+  animation: timer-in 1s forwards;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+
+h1 {
+  text-shadow: 0px 5px 20px rgba(0,0,0,0.7);
+}
+
+.logo {
+  position: absolute;
+  height: 173px;
+  width: 125px;
+  left: 898px;
+  top: 350px;
+  animation: logo-blink-out 3s forwards;
+  animation-timing-function: linear;
+}
+
+.vo-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.right-x {
+  transform: translate(2000px, 2000px);
+}
+
+.left-x {
+  transform: translate(-2000px, 2000px);
+}
+
+/* animation classes */
+
+.right-x-slide-in {
+  animation: right-x-in 1.1s forwards;
+}
+
+.left-x-slide-in {
+  animation: left-x-in .8s forwards;
+}
+
+/* animations */
+
+@keyframes scrollRight {
+  100% {
+    transform: translate(450px);
+  }
+}
+
+@keyframes right-x-in {
+  100% {
+    transform: translate(5px);
+  }
+}
+
+@keyframes left-x-in {
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes logo-blink-out {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.0);
+  }
+  65% {
+    opacity: 1.0;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes timer-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
