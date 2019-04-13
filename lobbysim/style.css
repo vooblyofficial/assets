@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:bold');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  background: url("imgs/gradient.svg") no-repeat;
+  background-size: auto auto;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  background: url("imgs/gradient.svg") no-repeat;
+  background-size: auto auto;
+}
+
+.row {
+  display: flex;
+  height: 135px;
+  width: 1920px;
+  transform: rotate(-40deg) translate3d(0, -400%, 0);
+}
+
+.cell {
+  display: flex;
+}
+
+.t {
+  margin: auto;
+  font-size: 70px;
+  font-family: Ubuntu;
+}
+
+.t:nth-of-type(even) {
+  font-family: Ubuntu;
+  font-weight: bold;
+}
+
+.row:nth-of-type(even) .cell {
+  color: rgba(230,230,230,1);
+  transform: translate3d(-500%, 0, 0);
+  animation: scrollText 500s linear infinite forwards;
+}
+
+.row:nth-of-type(odd) .cell {
+  color: rgba(0,0,0,0);
+  width: 150px;
+  height: 100%;
+  background: url("imgs/alt_blue_X.png") no-repeat;
+  background-size: 100px 100px;
+  background-position: center;
+  animation: scrollSwords 500s linear infinite forwards;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 1100px;
+  transform: rotate(-6deg);
+  animation: tilt 40s linear infinite alternate;
+}
+
+
+@keyframes scrollText {
+  0% {
+    transform: translate3d(-500%, 0, 0);
+  }
+  100% {
+    transform: translate3d(40%, 0, 0);
+  }
+}
+
+@keyframes scrollSwords {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-40%, 0, 0);
+  }
+}
+
+@keyframes tilt {
+  0% {
+    
+  }
+  100% {
+    transform: rotateY(1deg);
+  }
+}
